@@ -20,6 +20,11 @@ body {
     margin: 0 auto;
 }
 
+#area-principal {
+    width: 720px;
+    margin: 10px auto 10px auto;
+}
+
 
 #logo {
     float: left;
@@ -28,6 +33,11 @@ body {
 #menu {
     float: right;
     padding: 10px 0;
+}
+
+#postagem {
+    background: #fff; 
+    padding: 10px; 
 }
 
 a {
@@ -48,6 +58,23 @@ a:hover {
     background:#b9c941
 }
 
+a:active {
+    color: #535353;
+}
+
 .verde {
     color: #b9c941;
+}
+
+.data-postagem {
+    font-size: 14px; 
+    border-bottom: 1px solid #f4f4f4;
+    display: block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.img-postagem {
+    float: left;
+    margin: 0 10px 5px 0;
 }
