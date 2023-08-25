@@ -38,6 +38,11 @@ body {
 #postagem {
     background: #fff; 
     padding: 10px; 
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #b9c941
 }
 
 a {
@@ -77,4 +82,11 @@ a:active {
 .img-postagem {
     float: left;
     margin: 0 10px 5px 0;
+}
+
+.postado {
+    border-left: 5px solid #8d8d8d;
+    padding-left: 5px;
+    display: block;
+    margin-top: 10px;
 }
