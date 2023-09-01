@@ -1,15 +1,26 @@
 body{
-    background-color: rgb(251, 255, 0);
+    background-color: yellow;
 }
 
 h1{
-    color: rgb(255, 0, 0);
+    color: blue;
+    font-size: 40px;
+    text-shadow: 4px 4px 4px rgb(151, 143, 143);
 }
 
-footer{
+h2{
+    color: rgb(112, 112, 230);
     text-align: center;
-    font-size: 150%;
-    font-style: italic;
+}
+
+p{
+    color: gray;
+    text-align: justify;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+
+#links{
+    text-align: center;
+}
