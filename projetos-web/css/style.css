@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(231, 227, 227);
+}
+
+h1{
+    background-color: rgb(23, 161, 23);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    text-shadow: 4px 4px 4px black;
+}
+
+h2{
+    background-color: rgb(23, 161, 23);
+    color: white;
+}
+
+footer{
+    text-align: center;
+}
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(63, 62, 62);
+}
+
+#curso{
+    text-decoration: underline;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.skill{
+    font-weight:600;
+}
+
+a{
+    color: red;
+}
+
+a:hover{
+    color: green;
+}
