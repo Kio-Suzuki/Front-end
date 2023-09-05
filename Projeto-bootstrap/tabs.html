@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tabs</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="estilo.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container">
+
+        <header class="pb-2 mt-4 mb-2 border-bottom">
+            <h1>Tabs Bootstrap</h1>
+        </header>
+        
+        <!-- Criação das abas -->
+        
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Informações</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Avaliações</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Compre também</button>
+            </li>
+          </ul>
+
+          <!-- Conteúdo das abas-->
+
+          <div class="tab-content" id="myTabContent">
+
+            <!-- Aba informações-->
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <h4>Informações</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl nibh, lobortis sit amet ligula ac, ullamcorper efficitur arcu. Sed rutrum diam non risus rutrum lacinia. Vestibulum non sagittis neque, condimentum maximus nisi. Proin ultrices id velit nec aliquam. Nunc ut lorem et lacus laoreet egestas vel feugiat neque. Donec blandit ornare molestie. Aliquam velit est, lacinia vel lobortis id, luctus quis lectus.</p>
+            </div>
+                
+            <!-- Aba avaliações-->
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <h4>Avaliações</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl nibh, lobortis sit amet ligula ac, ullamcorper efficitur arcu. Sed rutrum diam non risus rutrum lacinia. Vestibulum non sagittis neque, condimentum maximus nisi. Proin ultrices id velit nec aliquam. Nunc ut lorem et lacus laoreet egestas vel feugiat neque. Donec blandit ornare molestie. Aliquam velit est, lacinia vel lobortis id, luctus quis lectus.</p>
+            </div>
+
+            <!-- Aba compre também-->
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <h4>Compre também</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl nibh, lobortis sit amet ligula ac, ullamcorper efficitur arcu. Sed rutrum diam non risus rutrum lacinia. Vestibulum non sagittis neque, condimentum maximus nisi. Proin ultrices id velit nec aliquam. Nunc ut lorem et lacus laoreet egestas vel feugiat neque. Donec blandit ornare molestie. Aliquam velit est, lacinia vel lobortis id, luctus quis lectus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl nibh, lobortis sit amet ligula ac, ullamcorper efficitur arcu. Sed rutrum diam non risus rutrum lacinia. Vestibulum non sagittis neque, condimentum maximus nisi. Proin ultrices id velit nec aliquam. Nunc ut lorem et lacus laoreet egestas vel feugiat neque. Donec blandit ornare molestie. Aliquam velit est, lacinia vel lobortis id, luctus quis lectus.</p>
+            </div>
+
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                  <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                  <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
+              </div>
+
+          </div>
+        
+
+        </div>
+        
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

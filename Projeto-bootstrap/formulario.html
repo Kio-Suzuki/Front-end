@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulário</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="estilo.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container">
+        
+        <header class="pb-2 mt-4 mb-2 border-bottom">
+            <h1>Formulário Bootstrap</h1>
+        </header>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <h3>Cadastre-se</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="name">Nome</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control" id="senha">
+                    </div>
+
+                    <div class="form-check">
+                        <label>
+                            <input type="checkbox"> Aceito os termos do serviço
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label>
+                            <input type="radio" name="opcoes"> PHP
+                        </label>
+
+                        <label>
+                            <input type="radio" name="opcoes"> Java
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary">Cadastrar</button>
+                    
+                </form>
+            </div>
+
+            <div class="col-sm-4">
+                <h3>Logar</h3>
+
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+                </div>
+
+                <div class="mb-3">
+                    <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Logar</button>
+            </div>
+        </div>
+
+    </div>
+
+   
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

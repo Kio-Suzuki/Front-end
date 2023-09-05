@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modal</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="estilo.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container">
+
+        <header class="pb-2 mt-4 mb-2 border-bottom">
+            <h1>Modal</h1>
+        </header>
+
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#janela">Logar</button>
+
+        <!-- Janela -->
+
+        <form class="modal fade" id="janela">
+
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <header class="modal-header">
+                        <h5>Efetuar login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </header>
+
+                    <section class="modal-body">
+                        <div class="form-group mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+                        </div>
+                        
+                    </section>
+
+                    <section class="modal-footer">
+                        <button type="reset" class="btn btn-secondary" data-bs-desmiss="modal">Limpar</button>
+                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janela">Logar</button>
+
+                    </section>
+                </div>
+            </div>
+                
+        </form>
+
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

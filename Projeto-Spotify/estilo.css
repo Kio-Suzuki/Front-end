@@ -1,0 +1,42 @@
+/* ================================================== layout ================================================== */
+
+
+
+.img-logo{
+    height: 40px;
+    width: 132px;
+    display: block;
+    background: url(Imagens/Spotify_Logo_White.png) no-repeat;
+    background-size: contain;
+    color: transparent;
+}
+
+.divisor{
+    width: 1px;
+    height: 16px;
+    background: white;
+    margin: 13px 10px;
+}
+
+nav.navbar-transparante{
+    padding: 15px 0px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+nav{
+    font-size: large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bg-success {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+  }
+
+
+
+
+
+
+
+/* ================================================ tipografia ================================================= *
