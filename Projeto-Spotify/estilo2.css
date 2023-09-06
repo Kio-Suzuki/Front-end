@@ -1,12 +1,31 @@
 /* ================================================== layout ================================================== */
 
-html, body, capa{
+html, body{
     height: 100%;
 }
 
-body{
-    background: linear-gradient(50deg,#ff4169,#7c26f8);
-    background-attachment: fixed;
+body {
+    background: url('Imagens/bg.jpg') center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    background: linear-gradient(90deg,rgba(240, 0, 188, 0.9), rgba(2, 141, 255, 0.9)), url('Imagens/bg.jpg') center center fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0; /* Coloque o pseudo-elemento atrás do conteúdo */
+}
+
+.conteudo {
+    position: relative;
+    z-index: 1;
+    color:white;
 }
 
 .img-logo{
@@ -18,6 +37,13 @@ body{
     color: transparent;
 }
 
+.divisor{
+    width: 1px;
+    height: 16px;
+    background: white;
+    margin: 13px 10px;
+}
+
 nav.navbar-transparante{
     padding: 15px 0px;
     background: rgba(0, 0, 0, 0.6);
@@ -27,26 +53,6 @@ nav{
     font-size: large;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-.capa{
-    display: table;
-    width: 100%;
-}   
-
-.texto-capa{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-h1{
-    font-size: 100px;
-    font-weight: 900;
-    letter-spacing: -8px;
-}
-
 
 
 
