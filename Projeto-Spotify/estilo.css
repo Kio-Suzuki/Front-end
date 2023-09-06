@@ -1,12 +1,12 @@
 /* ================================================== layout ================================================== */
 
-html, body, capa{
-    height: 100%;
+html, body, .capa{
+    min-height: 100vh;
 }
 
 body{
     background: linear-gradient(50deg,#ff4169,#7c26f8);
-    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .img-logo{
@@ -18,42 +18,128 @@ body{
     color: transparent;
 }
 
+.divisor{
+    width: 1px;
+    height: 16px;
+    background: white;
+    margin: 12px 10px;
+}
+
 nav.navbar-transparante{
     padding: 15px 0px;
     background: rgba(0, 0, 0, 0.6);
 }
 
-nav{
-    font-size: large;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
 .capa{
     display: table;
     width: 100%;
-}   
+}
 
 .texto-capa{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.btn-custom{
+    color: rgb(255, 255, 255);
+    border-radius: 500px;
+    padding: 10px 35px;
+    margin: 0px 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-roxo{
+    background: #7c25f8;
+}
+
+.btn-roxo:hover{
+    background-color: #6207e3;
+}
+
+.btn-branco{
+    border: 2px solid white;
+}
+
+.btn-branco:hover{
+    background-color: white;
+    color: black;
+}
+
+#servicos{
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.albuns{
+    padding: 10px 0px 10px 0px;
+}
+
+#recursos{
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: white;
 }
+
+.rotacionar{
+    transform: rotate(30deg);
+    padding-left: 100px;
+}
+
+footer{
+    background: black;
+    padding: 50px 0 20px 0;
+    position: relative;
+}
+
+/* ================================================ tipografia ================================================= */
 
 h1{
     font-size: 100px;
     font-weight: 900;
-    letter-spacing: -8px;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
 }
 
+h2{
+    font-size: 50px;
+    font-weight: 800;
+    padding-top: 18px;
+    letter-spacing: 0.04em;
+}
 
+h3{
+    font-size: 35px;
+    font-weight: 800;
+    padding-top: 18px;
+    letter-spacing: 0.04em;  
+}
 
+p{
+    font-size: 18px;
+}
 
+#servicos h2, #servicos h3{
+    color: #7c25f8
+}
 
+#recursos h3{
+    color: #9bf0e1;
+}
 
+#rodape h4{
+    color: #919496;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+#rodape a{
+    color: white;
+    text-decoration: none;
+}
 
-
-
-
-/* ================================================ tipografia ================================================= *
+#rodape a:hover{
+    color: #9bf0e1;
+}
