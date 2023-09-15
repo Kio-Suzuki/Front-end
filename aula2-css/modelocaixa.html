@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo de caixa</title>
     <style>
-        div{
-            background: black;
+        #caixa1{
+            border: 8px dotted yellow;
+            width: 250px;
+            height: 250px;
+            background-color: red;
+        }
+
+        #caixa2{
+            border: 30px solid blue;
+            margin: 25px;
+            width: 135px;
+            height: 135px;
+            background-color: green;
+        }
+
+        #caixa3{
+            margin: 65px;
+            width: 70px;
+            height: 70px;
+            background-color: yellow;
         }
     </style>
 </head>
 <body>
-    <div>
-        <p>Teste</p>
+    <div id="caixa1">
+        <div id="caixa2">
+            <div id="caixa3">
+            </div>
+        </div>
     </div>
 </body>
 </html>
