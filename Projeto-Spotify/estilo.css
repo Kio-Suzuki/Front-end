@@ -80,13 +80,26 @@ nav.navbar-transparante{
 
 #recursos{
     padding-top: 20px;
-    padding-bottom: 20px;
     color: white;
 }
 
-.rotacionar{
+.rotacionar1{
     transform: rotate(30deg);
     padding-left: 100px;
+}
+
+.rotacionar2{
+    transform: rotate(30deg);
+    padding-left: 100px;
+    overflow-x: hidden;
+}
+
+.rede-social{
+    color: white;
+}
+
+.overflow{
+    overflow: hidden;
 }
 
 footer{
