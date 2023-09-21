@@ -37,6 +37,7 @@ nav.navbar-transparante{
 
 .texto-capa{
     text-align: center;
+    justify-content: center;
     color: white;
     display: table-cell;
     vertical-align: middle;
