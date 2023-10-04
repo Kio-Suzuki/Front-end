@@ -5,7 +5,7 @@
 
 body {
     font-size: 16;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: #ebe8e8;
 }
 
@@ -28,10 +28,45 @@ body {
     font-size: 18px;
 }
 
-.doar {
-    background-image: url();
-    margin-top: 60px;
+header {
+    background-image: url(/Site-ODS/img/ods2-edit.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
     bottom: 0;
+}
+
+@font-face {
+    font-family: 'DancingScript';
+    src: url(/Site-ODS/fonts/DancingScript-VariableFont_wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.frase {
+    font-family: 'DancingScript', 'Poppins', sans-serif;
+    font-size: 58px;
+    transform: translate(39%, 570%);
+    color: white;
+}
+
+.botao-link {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4c9f38;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transform: translate(480%, 980%);
+}
+
+.botao-link:hover {
+    background-color: #06d1c7;
+    color: #000000;
 }
 
 .ong {
