@@ -12,7 +12,7 @@ body {
 #navbar {
     background: #000000;
     border-bottom: 1px solid #d8d8d8;
-    height: 70px;
+    height: 60px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -29,7 +29,8 @@ body {
 }
 
 .doar {
-    margin-top: 70px;
+    background-image: url();
+    margin-top: 60px;
     bottom: 0;
 }
 
