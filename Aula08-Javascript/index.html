@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Atividade Prática</title>
+</head>
+<body>
+
+    <p id="p1">Parágrafo 1</p>
+
+    <script>
+        document.body.onload = addElemento;
+        function addElemento () {
+            var pNova = document.createElement("p");
+            var conteudoNovo = document.createTextNode("Novo parágrafo!");
+            pNova.appendChild(conteudoNovo);
+            var pAtual = document.getElementById("div1");
+            document.body.insertBefore(pNova, pAtual);
+        }
+    </script>
+</body>
+</html>

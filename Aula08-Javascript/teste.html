@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Exemplo de JavaScript</title>
+</head>
+<body>
+    <p id="div1">O texto acima foi criado via JavaScript.</p>
+<script>
+document.body.onload = addElemento;
+function addElemento () {
+var pNova = document.createElement("p");
+var conteudoNovo = document.createTextNode("Texto da p nova!");
+pNova.appendChild(conteudoNovo);
+var pAtual = document.getElementById("div1");
+document.body.insertBefore(pNova, pAtual);
+}
+</script>
+</body>
+</html>
