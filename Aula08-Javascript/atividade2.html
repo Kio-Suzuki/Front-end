@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Atividade Prática 2</title>
+</head>
+<body>
+
+    <script>
+        document.body.onload = addLista;
+        function addLista() {
+            var novaLista = document.createElement("ul");
+            var item1 = document.createElement("li");
+            var item2 = document.createElement("li");
+            var item3 = document.createElement("li");
+            novaLista.appendChild(item1);
+            novaLista.appendChild(item2);
+            novaLista.appendChild(item3);
+            var conteudo1 = document.createTextNode("Arroz");
+            var conteudo2 = document.createTextNode("Óleo");
+            var conteudo3 = document.createTextNode("Carne");
+            item1.appendChild(conteudo1);
+            item2.appendChild(conteudo2);
+            item3.appendChild(conteudo3);
+            document.body.appendChild(novaLista);
+        }
+    </script>
+    
+</body>
+</html>

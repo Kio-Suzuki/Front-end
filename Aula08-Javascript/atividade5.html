@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Atividade Prática 5</title>
+</head>
+<body>
+
+    <p>Contador de caracteres</p>
+    <input type="text" id="texto">
+    <p id="qnt">Caracteres digitados: 0</p>
+
+    <script>
+        var texto = document.getElementById("texto");
+        var qnt = document.getElementById("qnt");
+
+        texto.addEventListener("input", function(){
+            var cont = texto.value.length;
+            qnt.textContent = "Caracteres digitados: " + cont;
+        });
+    </script>
+
+</body>
+</html>

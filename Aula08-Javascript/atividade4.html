@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Atividade Prática 4</title>
+</head>
+<body>
+
+    <button id="botao">Contador de clique</button>
+
+    <p id="valor">Número de cliques: 0</p>
+
+    <script>
+        var botao = document.getElementById("botao");
+        var valor = document.getElementById("valor");
+        var cont = 0;
+
+        botao.addEventListener("click", function(){
+            cont++;
+            valor.textContent = "Número de clique: " + cont;
+        });
+        
+    </script>
+
+</body>
+</html>
