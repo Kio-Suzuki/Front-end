@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Atividade Prática</title>
+</head>
+<body>
+
+    <script>
+        document.body.onload = addElemento;
+        function addElemento () {
+            var novaLista = document.createElement("ul");
+            var item1 = document.createElement("li");
+            var item2 = document.createElement("li");
+            var item3 = document.createElement("li");
+            var conteudo1 = document.createTextNode("Proteína");
+            var conteudo2 = document.createTextNode("Carboidrato");
+            var conteudo3 = document.createTextNode("Gordura");
+            item1.appendChild(conteudo1);
+            item2.appendChild(conteudo2);
+            item3.appendChild(conteudo3);
+            document.body.insertAdjacentElement(novaLista);
+        }
+    </script>
+</body>
+</html>
