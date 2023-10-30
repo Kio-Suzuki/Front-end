@@ -85,3 +85,22 @@ input {
 .addBtn:hover {
     background-color: #bbb;
 }
+
+.removeBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.removeBtn:hover {
+    background-color: #bbb;
+}
