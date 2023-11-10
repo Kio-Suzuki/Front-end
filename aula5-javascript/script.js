@@ -6,7 +6,7 @@ var count = 1;
 
 // Função para adicionar um novo paciente
 function addPatient(name, age) {
-  var newPatient = { id: count++, name: name, age: age }; //cria um novo objetivo de paciente (newPatient), com as propriedades id, name e age
+  var newPatient = { id: count++, name: name, age: age }; //cria um novo objeto de paciente (newPatient), com as propriedades id, name e age
   patientList.push(newPatient); //comando que adiciona o novo paciente ao final da lista de pacientes
   localStorage.setItem('patientList', JSON.stringify(patientList)); //o JSON.stringfy converte o objeto JavaScript em uma string JSON
   renderPatientList();

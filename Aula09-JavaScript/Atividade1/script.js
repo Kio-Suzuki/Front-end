@@ -60,6 +60,28 @@ function removeAll(){
     }
 }
 
+var itemLista = [];
+var count = 1;
+
+function addTask(task) {
+    var newTask = { id: count++, task: task}; //cria um novo objetivo de paciente (newPatient), com as propriedades id, name e age
+    itemLista.push(newTask); //comando que adiciona o novo paciente ao final da lista de pacientes
+    localStorage.setItem('itemLista', JSON.stringify(itemLista)); //o JSON.stringfy converte o objeto JavaScript em uma string JSON
+    renderTaskList();
+  }
+
+  function renderTaskList() {
+    var taskListElement = document.getElementById('itemLista');
+    taskListElement.innerHTML = ''; //limpa o conteúdo HTML do elemento patientListElement
+  
+    itemLista.forEach(function (task) {
+      var listItem = document.createElement('li');
+      //renderiza a lista de pacientes. Itera sobre cada paciente na lista encontrada e cria um <li> para cada paciente
+      listItem.innerHTML = '<span class="task-name">' + task.task + '</span><button class="delete-button" onclick="deletePatient(' + task.id + ')">Excluir</button>';
+      taskListElement.appendChild(listItem);
+    });
+  }
+
 
 
 
