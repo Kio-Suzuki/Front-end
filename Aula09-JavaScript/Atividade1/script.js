@@ -1,3 +1,38 @@
+var itemList = [];
+var count = 1;
+
+function addItem(dataFormatada, inputValue) {
+    var newItem = { id: count++, data: dataFormatada, task: inputValue }; //cria um novo objeto de paciente (newPatient), com as propriedades id, name e age
+    itemList.push(newPatient); //comando que adiciona o novo paciente ao final da lista de pacientes
+    localStorage.setItem('itemList', JSON.stringify(itemtList)); //o JSON.stringfy converte o objeto JavaScript em uma string JSON
+    renderItemList();
+}
+
+function getItemList() {
+    var storedList = JSON.parse(localStorage.getItem('itemList')); //converte a string JSON para objeto JavaScript
+    itemList = storedList || []; //se storedList for um valor válido (não seja nulo ou indefinido). é atribuido a patientList. Caso contrário, patientList recebe um array vazio
+}
+
+function renderItemList() {
+    var itemListElement = document.getElementById('itemList');
+    itemListElement.innerHTML = ''; //limpa o conteúdo HTML do elemento patientListElement
+  
+    itemList.forEach(function (item) {
+      var listItem = document.createElement('li');
+      //renderiza a lista de pacientes. Itera sobre cada paciente na lista encontrada e cria um <li> para cada paciente
+      listItem.innerHTML = '<span class="patient-name">' + patient.name + '</span> (Idade: ' + patient.age + ') <button class="delete-button" onclick="deletePatient(' + patient.id + ')">Excluir</button>';
+      patientListElement.appendChild(listItem);
+    });
+  }
+
+  document.getElementById('itemLista').addEventListener('submit', function (event) {
+    event.preventDefault();
+    var tarefa = document.getElementById('tarefa');
+    addItem(itemInput.value);
+    itemInput.value = '';
+   
+  });
+
 let myNodelist = document.getElementsByTagName("li");
 for(let i = 0; i < myNodelist.length; i++){
     let span = document.createElement("span");
@@ -60,27 +95,6 @@ function removeAll(){
     }
 }
 
-var itemLista = [];
-var count = 1;
-
-function addTask(task) {
-    var newTask = { id: count++, task: task}; //cria um novo objetivo de paciente (newPatient), com as propriedades id, name e age
-    itemLista.push(newTask); //comando que adiciona o novo paciente ao final da lista de pacientes
-    localStorage.setItem('itemLista', JSON.stringify(itemLista)); //o JSON.stringfy converte o objeto JavaScript em uma string JSON
-    renderTaskList();
-  }
-
-  function renderTaskList() {
-    var taskListElement = document.getElementById('itemLista');
-    taskListElement.innerHTML = ''; //limpa o conteúdo HTML do elemento patientListElement
-  
-    itemLista.forEach(function (task) {
-      var listItem = document.createElement('li');
-      //renderiza a lista de pacientes. Itera sobre cada paciente na lista encontrada e cria um <li> para cada paciente
-      listItem.innerHTML = '<span class="task-name">' + task.task + '</span><button class="delete-button" onclick="deletePatient(' + task.id + ')">Excluir</button>';
-      taskListElement.appendChild(listItem);
-    });
-  }
 
 
 

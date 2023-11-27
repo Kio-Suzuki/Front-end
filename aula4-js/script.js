@@ -44,3 +44,13 @@ function check(){
         alert('Erro ao fazer login');
     }
 }
+
+function checkAccount(){
+    var storedEmail = localStorage.getItem('name');
+    if(storedEmail !== null){
+        alert("olá, você já possui o seguinte e-mail já cadastrado: " +storedEmail);
+    }
+}
+
+window.onload = checkAccount;
+
