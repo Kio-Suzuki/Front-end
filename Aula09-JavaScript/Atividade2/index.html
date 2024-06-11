@@ -1,18 +1,18 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <title>Exercício com DOM-HTML</title>
-        <style type="text/css" media="all">
-            .invisivel { opacity: 0; transform: scale(0.1); max-height: 0; }
-            .animada { transition: all linear 3s; opacity: 1; transform: scale(2); max-height: 100px; }
-            .ch { background-color: cyan; transform: scale(2); }
-            .mascara { overflow: hidden; width: 387px; height: 60px; position: relative; }
-            .mascara .atrapalhando { position: absolute; left: 0; top: 0; height: 100%; width: 100%; background-color: red; }
-            .mascara .utfpr { height: 60px; width: 3000px; background-image: url(http://portal.utfpr.edu.br/++theme++utfpr_branco/img/logo.png); }
-        </style>
-    </head>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css" media="all">
+        .invisivel { opacity: 0; transform: scale(0.1); max-height: 0; }
+        .animada { transition: all linear 3s; opacity: 1; transform: scale(2); max-height: 100px; }
+        .ch { background-color: cyan; transform: scale(2); }
+        .mascara { overflow: hidden; width: 387px; height: 60px; position: relative; }
+        .mascara .atrapalhando { position: absolute; left: 0; top: 0; height: 100%; width: 100%; background-color: red; }
+        .mascara .utfpr { height: 60px; width: 3000px; background-image: url(http://portal.utfpr.edu.br/++theme++utfpr_branco/img/logo.png); }
+    </style>
+    <title>Exercício com DOM-HTML</title>
+</head>
 <body>
     
     <h1>Exercício com DOM-HTML</h1>
@@ -34,8 +34,11 @@
         <li>ESTRATÉGIAS DE PROGRAMAÇÃO - PERÍODO 4 - (60h)</li>
     </ul>
 
-    <div class="mascara"><div class="atrapalhando"></div><div class="utfpr"></div></div>
+    <div class="mascara">
+        <div class="atrapalhando"></div>
+        <div class="utfpr"></div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
-
 </html>
